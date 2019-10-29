@@ -4,9 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Dynamic Feature.iml" filepath="$PROJECT_DIR$/Dynamic Feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chabok_feature/chabok_feature.iml" filepath="$PROJECT_DIR$/chabok_feature/chabok_feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/core_feature/core_feature.iml" filepath="$PROJECT_DIR$/core_feature/core_feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook_feature/facebook_feature.iml" filepath="$PROJECT_DIR$/facebook_feature/facebook_feature.iml" />
       <module fileurl="file://$PROJECT_DIR$/firebase_feature/firebase_feature.iml" filepath="$PROJECT_DIR$/firebase_feature/firebase_feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playservice_feature/playservice_feature.iml" filepath="$PROJECT_DIR$/playservice_feature/playservice_feature.iml" />
     </modules>
   </component>
 </project>
