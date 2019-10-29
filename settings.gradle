@@ -1,2 +1,2 @@
-include ':app', ':core_feature'
+include ':app', ':core_feature', ':firebase_feature'
 rootProject.name='Dynamic Feature'

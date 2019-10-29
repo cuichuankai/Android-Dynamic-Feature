@@ -24,6 +24,10 @@ android {
     buildTypes {
         debug {
             minifyEnabled false
+            // Only use this flag on builds you don't proguard or upload to beta-by-crashlytics
+            ext.alwaysUpdateBuildId = false
+            // Disable fabric build ID generation for debug builds
+            ext.enableCrashlytics = false
         }
 
         release {
@@ -34,10 +38,27 @@ android {
 }
 
 dependencies {
+    api project(path: ':core_feature')
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api 'com.google.firebase:firebase-core:17.2.1'
+    api 'com.google.firebase:firebase-analytics:17.2.1'
+    api 'com.google.firebase:firebase-messaging:20.0.0'
+    api 'com.google.firebase:firebase-config:19.0.3'
+
+    // Add the Crashlytics NDK dependency
+    implementation('com.crashlytics.sdk.android:crashlytics-ndk:2.1.0@aar') {
+        transitive = true
+    }
+
+    // Add the Crashlytics SDK dependency
+    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+        transitive = true
+    }
 }
