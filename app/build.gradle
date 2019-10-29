@@ -44,4 +44,7 @@ dependencies {
 
     implementation project(path: ':core_feature')
     implementation project(path: ':playservice_feature')
+    implementation project(path: ':firebase_feature')
+    implementation project(path: ':facebook_feature')
+    implementation project(path: ':chabok_feature')
 }
