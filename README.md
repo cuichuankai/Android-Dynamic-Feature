@@ -1,2 +1,2 @@
 # Android-Dynamic-Feature
-Add dynamic features to an android application
+Demonstrate how to add dynamic features to an existing android application
