@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Facebook_Feature</string>
+
+    <string name="facebook_app_id" translatable="false">1111111111</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1111111111</string>
+
+</resources>
