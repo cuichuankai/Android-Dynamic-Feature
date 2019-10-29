@@ -2,6 +2,7 @@ package com.example.firebase_feature.configuration;
 
 import com.example.core_feature.configuration.BaseConfiguration;
 import com.example.firebase_feature.capabilities.FirebaseAnalyticCapability;
+import com.example.firebase_feature.capabilities.FirebaseCrashlyticCapability;
 import com.google.firebase.FirebaseApp;
 
 public class FirebaseConfiguration extends BaseConfiguration {
@@ -12,6 +13,7 @@ public class FirebaseConfiguration extends BaseConfiguration {
         FirebaseApp.initializeApp(BaseConfiguration.getContext());
 
         capabilities.add(new FirebaseAnalyticCapability());
+        capabilities.add(new FirebaseCrashlyticCapability());
     }
 
     public static FirebaseConfiguration getInstance() {
